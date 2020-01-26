@@ -9,10 +9,8 @@ var _express = require('express');
 var router = (0, _express.Router)();
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
-    res.render('index', {
-        title: 'Express'
-    });
+router.get('/', function (req, res) {
+    res.send('Welcome to AKHomeSensors');
 });
 
 exports.default = router;

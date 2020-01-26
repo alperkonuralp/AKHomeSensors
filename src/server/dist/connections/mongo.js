@@ -10,11 +10,15 @@ var _mongoose2 = _interopRequireDefault(_mongoose);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var mongoHost = process.env.MONGO_HOST || "NEO";
+
 exports.default = function () {
-    (0, _mongoose.connect)("mongodb://127.0.0.1:27017/AKHomeSensorsApp", {
+    (0, _mongoose.connect)("mongodb://" + mongoHost + ":27017/AKHomeSensorsApp", {
         useNewUrlParser: true,
-        appname: "AKHomeSensorsWebApi",
-        useUnifiedTopology: true
+        appname: "AKHomeSensorsWebApp",
+        useUnifiedTopology: true,
+        useFindAndModify: false,
+        useCreateIndex: true
     });
 
     _mongoose.connection.on('open', function () {
