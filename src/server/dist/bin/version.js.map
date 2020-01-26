@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../app/bin/version.js"],"names":["version","buildTime"],"mappings":";;;;;kBAAe;AACbA,WAAS,eADI;AAEbC,aAAW;AAFE,C","file":"version.js","sourcesContent":["export default {\n  version: '1.2001.262343',\n  buildTime: '2020-01-26T20:43:35.025Z',\n};\n"]}
+{"version":3,"sources":["../../app/bin/version.js"],"names":["version","buildTime"],"mappings":";;;;;kBAAe;AACbA,WAAS,eADI;AAEbC,aAAW;AAFE,C","file":"version.js","sourcesContent":["export default {\n  version: '1.2001.262354',\n  buildTime: '2020-01-26T20:54:25.426Z',\n};\n"]}
